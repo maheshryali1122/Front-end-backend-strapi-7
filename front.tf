@@ -63,7 +63,6 @@ resource "aws_instance" "ec2forfrontreact" {
   user_data = <<-EOF
     #!/bin/bash
     sudo apt update
-    sudo apt install apache2 -y
   EOF
 
   tags = {
